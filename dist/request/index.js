@@ -48,6 +48,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var ioc_di_1 = require("ioc-di");
 var axios_1 = require("axios");
 var cookie_1 = require("../cookie");
+var utils_1 = require("../utils");
 var QzoneApiRequest = /** @class */ (function () {
     function QzoneApiRequest() {
         this.axios = axios_1.default.create({
@@ -91,7 +92,7 @@ var QzoneApiRequest = /** @class */ (function () {
                     case 0: return [4 /*yield*/, this.axios.get(url)];
                     case 1:
                         res = _a.sent();
-                        return [2 /*return*/, parseJSONPArgs(res.data)];
+                        return [2 /*return*/, (0, utils_1.parseJSONPArgs)(res.data)];
                 }
             });
         });

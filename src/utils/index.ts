@@ -1,5 +1,5 @@
 /**nosafe */
-function parseJSONPArgs(data: string) {
+export function parseJSONPArgs(data: string) {
   const result = /(.*?)\)/.exec(data)
   if (result && result[1]) {
     return eval(`(function(${result[1]}){

@@ -1,2 +1,2 @@
 /**nosafe */
-declare function parseJSONPArgs(data: string): any;
+export declare function parseJSONPArgs(data: string): any;

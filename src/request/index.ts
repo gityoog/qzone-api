@@ -1,6 +1,7 @@
 import { Already, Destroy, Inject, Service } from "ioc-di"
 import axios from 'axios'
 import QzoneApiCookie from "../cookie"
+import { parseJSONPArgs } from "../utils"
 
 @Service()
 export default class QzoneApiRequest {
