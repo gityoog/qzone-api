@@ -100,7 +100,7 @@ var QzoneApiRequest = /** @class */ (function () {
         this.axios = null;
     };
     __decorate([
-        ioc_di_1.Inject(),
+        (0, ioc_di_1.Inject)(),
         __metadata("design:type", cookie_1.default)
     ], QzoneApiRequest.prototype, "cookie", void 0);
     __decorate([
@@ -116,7 +116,7 @@ var QzoneApiRequest = /** @class */ (function () {
         __metadata("design:returntype", void 0)
     ], QzoneApiRequest.prototype, "destroy", null);
     QzoneApiRequest = __decorate([
-        ioc_di_1.Service(),
+        (0, ioc_di_1.Service)(),
         __metadata("design:paramtypes", [])
     ], QzoneApiRequest);
     return QzoneApiRequest;

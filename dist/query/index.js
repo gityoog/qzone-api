@@ -95,7 +95,7 @@ var QzoneApiQuery = /** @class */ (function () {
                     case 0: return [4 /*yield*/, this.check(uin)];
                     case 1:
                         _a = _c.sent(), verifycode = _a.verifycode, salt = _a.salt, pt_verifysession_v1 = _a.pt_verifysession_v1, pt_randsalt = _a.pt_randsalt, ptdrvs = _a.ptdrvs;
-                        p = pwd_1.default(password, salt, verifycode);
+                        p = (0, pwd_1.default)(password, salt, verifycode);
                         return [4 /*yield*/, this.request.jsonp("https://ui.ptlogin2.qq.com/ssl/login?ptdrvs=" + ptdrvs + "&pt_vcode_v1=0&pt_verifysession_v1=" + pt_verifysession_v1 + "&verifycode=" + verifycode + "&u=" + uin + "&p=" + p + "&pt_randsalt=" + pt_randsalt + "&ptlang=2052&low_login_enable=0&u1=https%3A%2F%2Fh5.qzone.qq.com%2Fmqzone%2Findex&from_ui=1&fp=loginerroralert&device=2&aid=0&daid=5&pt_ttype=1&pt_3rd_aid=0&ptredirect=1&h=1&g=1&pt_uistyle=9&regmaster=&")];
                     case 2:
                         _b = __read.apply(void 0, [_c.sent(), 5]), code = _b[0], url = _b[2], msg = _b[4];
@@ -155,15 +155,15 @@ var QzoneApiQuery = /** @class */ (function () {
         });
     };
     __decorate([
-        ioc_di_1.Inject(),
+        (0, ioc_di_1.Inject)(),
         __metadata("design:type", request_1.default)
     ], QzoneApiQuery.prototype, "request", void 0);
     __decorate([
-        ioc_di_1.Inject(),
+        (0, ioc_di_1.Inject)(),
         __metadata("design:type", cookie_1.default)
     ], QzoneApiQuery.prototype, "cookie", void 0);
     QzoneApiQuery = __decorate([
-        ioc_di_1.Service()
+        (0, ioc_di_1.Service)()
     ], QzoneApiQuery);
     return QzoneApiQuery;
 }());

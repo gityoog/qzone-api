@@ -97,7 +97,7 @@ var QzoneApi = /** @class */ (function () {
         // destroy entry
     };
     __decorate([
-        ioc_di_1.Inject(),
+        (0, ioc_di_1.Inject)(),
         __metadata("design:type", query_1.default
         /**
          * 登录接口
@@ -111,7 +111,8 @@ var QzoneApi = /** @class */ (function () {
         __metadata("design:returntype", void 0)
     ], QzoneApi.prototype, "destroy", null);
     QzoneApi = __decorate([
-        ioc_di_1.Root()
+        (0, ioc_di_1.Root)(),
+        (0, ioc_di_1.Service)()
     ], QzoneApi);
     return QzoneApi;
 }());

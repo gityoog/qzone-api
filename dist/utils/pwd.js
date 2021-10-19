@@ -5,8 +5,8 @@ var tea_1 = require("./tea");
 var rsa_1 = require("./rsa");
 var base64_1 = require("./base64");
 function default_1(password, salt, verifycode) {
-    var o = md5_1.default(password).toUpperCase();
-    var e = md5_1.default(_(o) + salt).toUpperCase();
+    var o = (0, md5_1.default)(password).toUpperCase();
+    var e = (0, md5_1.default)(_(o) + salt).toUpperCase();
     var n = tea_1.default.strToBytes(verifycode.toUpperCase(), true);
     var r = Number(n.length / 2).toString(16).padStart(4, "0");
     tea_1.default.initkey(e, false);

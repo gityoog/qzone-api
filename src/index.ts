@@ -1,8 +1,9 @@
 import './utils/string.polyfill'
-import { Destroy, Inject, Root } from 'ioc-di'
+import { Destroy, Inject, Root, Service } from 'ioc-di'
 import QzoneApiQuery from './query'
 
 @Root()
+@Service()
 export default class QzoneApi {
   private uin = ''
   @Inject() private query!: QzoneApiQuery
