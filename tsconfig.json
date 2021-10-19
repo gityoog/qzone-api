@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "module": "CommonJS",
+    "target": "ES5",
+    "outDir": "./dist",
+    "declaration": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "./**/*"
+  ]
+}
