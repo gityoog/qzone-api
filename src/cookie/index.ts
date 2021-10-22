@@ -1,5 +1,6 @@
-import { Destroy } from "ioc-di"
+import { Destroy, Service } from "ioc-di"
 
+@Service()
 export default class QzoneApiCookie {
   data: Record<string, string> = {}
   add(data: string[]) {

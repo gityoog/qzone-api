@@ -68,6 +68,9 @@ var QzoneApiCookie = /** @class */ (function () {
         __metadata("design:paramtypes", []),
         __metadata("design:returntype", void 0)
     ], QzoneApiCookie.prototype, "destroy", null);
+    QzoneApiCookie = __decorate([
+        (0, ioc_di_1.Service)()
+    ], QzoneApiCookie);
     return QzoneApiCookie;
 }());
 exports.default = QzoneApiCookie;
